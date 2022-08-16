@@ -1,0 +1,1176 @@
+:root {
+    /* ---------------colors------------------ */
+    --main-color: #518581;
+    --secondary-color: #FFB23F;
+    --text-color: #151411;
+    --paragraph-c: #AFADB5;
+    --placeholder: #F9F9F9;
+    --screen-colo: #FFFFFF;
+    --line-color: #F3F3F3;
+    --button-color: #518581;
+    --shadow-color : #eeeeee;
+    --shadow-color2:#9d9d9d;
+    --border--color:#ECE4DE;
+
+    /* -----------phone font sizes------------ */
+    --phone-h3-f-size:26px;
+    --desktop-p-f-size:19px;
+    --phone-p-f-size:14px;
+}
+
+@font-face {
+    font-family: EudoxusSans;
+    src: url('./fonts/EudoxusSans-Regular.woff2') format('woff2');
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: var(--screen-color);
+}
+
+/* ---------------headings styles start---------------- */
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: EudoxusSans, serif;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 50px;
+    color: #000000;
+}
+
+.h1 {
+    font-size: 64px;
+}
+
+.h2 {
+    font-size: 44px;
+}
+
+.h3 {
+    font-size: 39px;
+}
+
+.h4 {
+    font-size: 20px;
+}
+
+.h5 {
+    font-size: 18px;
+}
+
+.h6 {
+    font-size: 15px;
+}
+/* ---------------headings styles end---------------- */
+
+/* ---------------header start----------------------- */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 90px;
+    margin: 0 auto 50px;
+    border-bottom: 1px solid var(--border--color);
+}
+
+.header-logo {
+    width: 120px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-logo img{
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+.header-links{
+    width: 710px;
+    display: flex;
+    justify-content: center;
+}
+
+.header-links > a {
+    font-family:EudoxusSans ;
+    font-weight: 600;
+    margin-right: 60px;
+    color: #151411;
+    text-decoration: none;
+}
+
+.header-icons-laptop > i {
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.header-icons-mobile {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* ---------------header end-------------------- */
+
+/* ---------------discover start---------------- */
+
+.discover-container .text2 {
+    color: #AFADB5;
+}
+
+.discover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.discover-container {
+    width: 550px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-family: EudoxusSans;
+    font-size: 20px;
+}
+
+.discover-image {
+    position: absolute;
+    width: 95px;
+    height: 150px;
+    top: 75px;
+    left: -148px;
+}
+
+.discover-shine {
+    position: absolute;
+    top: 65px;
+    right: 30px;
+}
+/* ---------------discover end---------------- */
+
+/* ---------------search start---------------- */
+
+.search-container {
+    width: 90%;
+    margin: 0 auto 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container img {
+    height: auto;
+    width: 100%;
+}
+
+.search-box {
+    box-shadow: 0 4px 80px var(--shadow-color);
+    display: flex;
+    width: 60%;
+    height: 70px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 20%;
+    background-color: #FFFFFF;
+    padding: 0 20px;
+    top: -30px;
+}
+
+.search-box > i {
+    margin-right: 20px;
+    font-size: 20px;
+    color: #AFADB5;
+    cursor: pointer;
+}
+
+.search-box > input::placeholder {
+    font-size: 18px;
+    padding-left: 10px;
+    color: var(--paragraph-c);
+    font-family:EudoxusSans ;
+}
+
+.search-box > input:focus {
+    outline: none;
+}
+
+.search-box > input {
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+}
+
+.search-box > button {
+    background: #518581;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 35px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+/* ---------------search end-------------------- */
+
+/* ---------------benefits start---------------- */
+.benefits {
+    margin-bottom: 90px;
+}
+
+.benefits-container {
+    width: 90%;
+    margin: 0 auto 150px;
+}
+
+.benefits-container .small-titles {
+    margin-left: 30px;
+}
+
+.benefits-row1 {
+    display: flex;
+    justify-content: space-between;
+    margin:0 30px 100px;
+}
+
+
+.benefits-row2 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits-row2-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 28%;
+    height: 250px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px var(--shadow-color);
+    padding: 30px 20px;
+}
+
+.benefits-row2-item:nth-child(2) {
+    margin-top:-30px;
+}
+
+.benefits-row2-item > img {
+    width: 62px;
+    height: 62px;
+}
+/* ---------------benefits end------------------------ */
+
+/* ---------------popular products start-------------- */
+.popular-products-container {
+    flex-direction: column;
+    margin-bottom: 150px;
+
+}
+.p-products-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.p-products-text p{
+    margin-top: 30px;
+}
+
+.p-products-pics {
+    display: flex;
+    overflow-y: hidden;
+    justify-content: space-between;
+    position: relative;
+}
+
+.p-products-pics .cards img {
+    width: 300px;
+    aspect-ratio: 1/1;
+    margin-bottom:20px;
+}
+ 
+.arrow1 , .arrow2 {
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-color:var(--text-color);
+    opacity: 70%;
+    border-radius: 50%;
+    position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+.arrow1 img , .arrow2 img {
+    width: 5px;
+    aspect-ratio: 1/2;
+}
+
+.arrow1 {
+    top: 30%;
+    left: 3%;
+}
+
+.arrow2 {
+    top: 30%;
+    right: 3%;
+}
+/* ---------------popular products end-------------- */
+
+/* ---------------our products start--------------- */
+.our-products-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0 60px 150px;
+}
+
+.o-p-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 780px;
+}
+
+.o-p-left h3 {
+    margin-top: -35px;
+}
+
+.o-p-left p {
+    margin-right: 200px;
+}
+
+.o-p-left button {
+    border: none;
+    background-color: var(--button-color);
+    color: var(--screen-colo);
+    box-shadow: var(--shadow-color2);
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer;
+    width: 170px;
+    aspect-ratio: 3/1;
+}
+
+.o-p-left img {
+    width: 660px;
+    aspect-ratio: 3/1.5;
+}
+
+.o-p-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;    
+    height: 800px;
+}
+
+.o-p-num-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 530px;
+    margin: 25px 0 -10px 150px;
+}
+
+.o-p-num-container h3 {
+    margin-bottom: 10px;
+}
+
+.o-p-right img {
+    width: 680px;
+    aspect-ratio: 1/.9;
+}
+/* ---------------our products end----------------- */
+
+/* ---------------our customers start-------------- */
+.customers-container {
+    width: 100%;
+    height: 630px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.customers-container > p {
+    text-align: center;
+}
+
+.comments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.comment-card {
+    width: 545px;
+    height: 256px;
+    box-shadow: 0 0 25px var(--shadow-color);
+    margin: 0 20px;
+    padding: 30px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.quote {
+    width: 45px;
+    aspect-ratio: 1/1;
+}
+
+.customer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-info-container {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ---------------our customers end------------------ */
+
+/* --------------- best furniture start-------------- */
+.best-furniture {
+    width: 100%;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.b-f-left {
+    height: 930px;
+    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.b-f-l-pic {
+    position: relative;
+}
+
+.b-f-l-p-desktop {
+    width: 580px;
+    aspect-ratio: 1/1.1;
+}
+.b-f-l-p-phone {
+    display: none;
+}
+.b-f-l-pic-text {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    height: 150px;
+    color: var(--screen-colo);
+    font-family: EudoxusSans;
+    line-height: 20px;
+    font-size: var(--desktop-p-f-size);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.b-f-l-pic-text h4 {
+    color: var(--screen-colo);
+}
+
+.b-f-l-pic-phone-p {
+    display: none;
+}
+
+.b-f-l-pic-arrows {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    display: flex;
+}
+
+.b-f-l-left-arrow , .b-f-l-right-arrow {
+    padding: 20px;
+}
+
+.b-f-l-left-arrow {
+    background-color: var(--screen-colo);
+}
+
+.b-f-l-right-arrow {
+    background-color: var(--button-color);
+}
+
+.b-f-right {
+    height: 960px;
+    margin-right: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.b-f-r-pic {
+    width: 260px;
+    aspect-ratio: 1/1;
+}
+
+.b-f-row {
+    margin-top: 40px;
+    width: 700px;
+    display: flex;
+    justify-content:space-between ;
+}
+
+.b-f-info-container {
+    width: 370px;
+    margin-right: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.b-f-info {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+}
+
+.b-f-info img {
+    width: 40px;
+    height: 40px;
+}
+
+/* --------------- best furniture end -------------- */
+
+/* --------------- join me start ------------------- */
+.join-me-container {
+    width: 90%;
+    margin:0 auto 100px;
+    padding-bottom: 86px;
+    border-bottom: 1px solid var(--border--color);
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.j-m-button {
+    width: 210px;
+    height: 60px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    background-color: var(--button-color);
+    font-family: EudoxusSans;
+    color: var(--screen-colo);
+    font-size: var(--desktop-p-f-size);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.j-m-button img {
+    width: 30px;
+    height: 15px;
+    margin-right: 15px;
+}
+
+.j-m-button span {
+    margin-left: 15px;
+}
+/* --------------- jon me end ---------------- */
+
+/* --------------- footer start -------------- */
+.footer-container {
+    width: 90%;
+    margin: 0 auto 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: EudoxusSans;
+}
+
+.footer-left {
+    width: 450px;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer-logo h3{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.footer-left p {
+    font-size: 19px;
+    font-weight: 600;
+    word-spacing: 1px;
+    margin-left: 10px;
+    line-height: 2;
+    color: #151411;
+}
+
+.footer-right {
+    width: 520px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.f-r-links {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.f-r-links h4 {
+    color: #000000;
+    font-size: 22px;
+}
+
+.f-r-links div{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.f-r-links a {
+    margin-top: 25px;
+    text-decoration: none;
+    color: #151411;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* --------------- footer end -------------- */
+
+
+
+/* ---------texts styles start--------- */
+.small-titles {
+    font-family: EudoxusSans;
+    color: var(--secondary-color);
+}
+
+.big-titles {
+    font-family: EudoxusSans;
+    color: var(--text-color);
+}
+
+.paragraphs {
+    font-family: EudoxusSans;
+    color: var(--paragraph-c);
+    line-height: 30px;
+    font-size: var(--desktop-p-f-size);
+}
+/* -------------texts styles end------------- */
+
+
+
+
+/* -----------mobile version start----------- */
+
+@media only screen and (max-width: 768px) {
+    .h2 {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.01em;
+    }
+
+    .h3 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .h4 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .paragraphs {
+        font-size: var(--phone-p-f-size);
+    }
+    
+    .p{
+        font-size: 14px;
+    }
+
+    /* ---------------header start---------------- */
+    .header-container {
+        height: 60px;
+        margin-bottom: 30px;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    .header-logo {
+        width: 210px;
+    }
+
+    .header-logo img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .header-icons-laptop {
+        display: none;
+    }
+
+    .header-icons-mobile {
+        display: block;
+    }
+    /* ---------------header end------------------ */
+
+    /* ---------------discover start-------------- */
+    .discover-container {
+        width: 280px;
+        height: 180px;
+        margin: 0 auto 15px;
+        font-size: 14px;
+        justify-content: space-around;
+    }
+
+    .discover-container .h2 {
+        font-size: 23px;
+    }
+
+    .discover-image {
+        width: 30px;
+        height: 45px;
+        top: 40px;
+        left: -5px;
+    }
+
+    .discover-shine {
+        width: 25px;
+        height: 25px;
+        top: 40px;
+        right: 11px;
+    }
+    /* ---------------discover end---------------- */
+
+    /* ---------------search start---------------- */
+    .search-container{
+        margin-bottom: 50px;
+    }
+    .search-box {
+        width: 100%;
+        height: 30px;
+        left: 0;
+        padding: 0;
+        top: -70px;
+    }
+
+    .search-box button {
+        height: 30px;
+        width: 100px;
+        font-size: 10px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    /* ---------------search end------------------ */
+    
+    /* ---------------benefits start-------------- */
+
+    .benefits-container {
+        margin-bottom: 0;
+    }
+
+    .benefits-row1 {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .benefits-row1 p {
+        text-align: left;
+    }
+
+    .benefits-row1-right {
+        margin-top: 20px;
+    }
+
+    .benefits-row2 {
+        flex-direction: column;
+    }
+
+    .benefits-row2-item {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .benefits-row2-item:nth-child(2) {
+        margin: 0;
+    }
+    /* ---------------benefits start---------------------- */
+
+    /* ---------------popular products start-------------- */
+    .popular-products-container {
+        margin-bottom: 50px;
+        overflow-y: hidden;
+        scrollbar-width: none; /* hiding scrollbar for IE & Edge*/
+        -ms-overflow-style: none; /* hiding scrollbar for Fire fox*/
+    }
+
+    .p-products-pics::-webkit-scrollbar{ /* hiding scrollbar for Chrome*/
+        display: none;
+    }
+
+    .p-products-text {
+        text-align: left;
+        margin:0 15px 40px ;
+    }
+
+    .p-products-text p {
+        text-align: justify;
+    }
+
+    .p-products-pics .cards {
+        margin:0 7px 0 7px;
+    }
+
+    .p-products-pics .cards img {
+        width: 220px;
+        aspect-ratio: 1/.9;
+    }
+
+    .arrow1 {
+       display: none;
+    }
+    
+    .arrow2 {
+        display: none;
+    }
+    /* ---------------popular products end-------------- */
+
+    /* ---------------our products start---------------- */
+    .our-products-container {
+        flex-direction: column;
+        margin: 0 30px 0px;
+        position: relative;
+    }
+
+    .o-p-left {
+        height: 800px;
+    }
+
+
+    .o-p-left p {
+        font-size: var(--phone-p-f-size);
+        margin-right: 0;
+        text-align: justify;
+    }
+
+    .o-p-left button {
+        width: 100%;
+        height:50px;
+    }
+
+    .o-p-left img {
+        width: 100%;
+        height: 25%;
+        margin-top: 115px;
+    }
+
+    .o-p-right {
+        width: 100%;
+        height: 340px;
+    }
+
+    .o-p-num-container {
+        width: 100%;
+        margin: 0;
+        justify-content: space-around;
+        position:absolute ;
+        top: 470px;
+    }
+
+    .o-p-num-container div {
+        margin: 0px 0px 0 14px;
+        width: 98px;
+        justify-content: flex-start;
+    }
+
+    .o-p-num-container h3 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .o-p-right span {
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    .o-p-right img {
+        width: 100%;
+        height: 20%;
+        position:absolute ;
+        top: 820px;
+    }
+    /* ---------------our products end----------------- */
+
+    /* ---------------our customers start-------------- */
+    .customers-container {
+        margin: 0 0 50px;
+    }
+    
+    .customers-container > p {
+        margin: 0 30px;
+        text-align: justify;
+    }
+
+    .customers-container > h2 {
+        font-size: 20px;
+        font-weight: 70;
+    }
+    .comment-card:nth-child(odd){
+        display: none;
+    }
+    .comment-card {
+        width: 100%;
+    }
+
+    .c-info-container {
+        width: 73%;
+        justify-content: flex-start;
+    }
+
+    .c-info-container img {
+        margin-right: 10px;
+    }
+
+    .customer span {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    /* ---------------our customers end------------------- */
+
+    /* --------------- best furniture start -------------- */
+    .best-furniture {
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+
+    .b-f-left {
+        width: 320px;
+        margin: 80px auto 0;
+        height: 345px;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    .b-f-span {
+        position: absolute;
+        left: 10px;
+        top: -70px;
+    }
+    
+    .b-f-left h3  {
+        margin: 0;
+        position: absolute;
+        left: 10px;
+        top: -30px;
+    }
+
+    .b-f-l-p-desktop {
+        display: none;
+    }
+
+    .b-f-l-p-phone {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .b-f-l-pic-text {
+        left: 20px;
+        bottom: 15px;
+        justify-content: flex-end;
+    }    
+
+    .b-f-l-pic-text span {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .b-f-l-pic-phone-p {
+        display: block;
+    }
+
+    .b-f-l-pic-desktop-p{
+        display: none;
+    }
+
+    .b-f-l-pic-arrows {
+        display: none;
+    }
+
+    .b-f-right {
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .b-f-right h5 {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .b-f-info {
+        justify-content: flex-start;
+        width: 170px;
+    }
+
+    .b-f-info img {
+        width: 25px;
+        height: 25px;
+        margin-right: 7px;
+    }
+
+    .b-f-info h6 {
+        font-size: 14px;
+    }
+    .b-f-row {
+        width: 100%;
+        height: 130px;
+        margin-top: 20px;
+        align-items:center;
+    }
+
+    .b-f-r-pic {
+        width:110px;
+        height: 110px;    
+    }
+
+    .b-f-info-container {
+        margin:0 0 0 15px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .b-f-info span , .b-f-info-container p {
+        display: none;
+    }
+    /* --------------- best furniture end -------------- */
+
+    /* --------------- jon me start -------------------- */
+    .join-me-container {
+        height: 120px;
+        padding-bottom: 40px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .join-me-container h3 {
+        font-size: 22px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .j-m-button {
+        width: 160px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+    .j-m-button img {
+        width: 20px;
+        height: 10px;
+    }
+    /* --------------- jon me end ----------------- */
+
+    /* --------------- footer start -------------- */
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 320px;
+        width: auto;
+        margin: 0px 20px 50px;
+    }
+
+    .footer-left {
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 100%;
+        height: 135px;
+        box-sizing: border-box;
+    }
+
+    .footer-logo {
+        width: 108px;
+    }
+
+    .footer-logo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-left p {
+        margin: 0;
+    }
+
+    .footer-left p , .f-r-links a{
+        font-size: 16px;
+        color: var(--paragraph-c);
+    }
+
+    .footer-logo h3 , .f-r-links h4{
+        font-size: 20px;
+    }
+
+    .footer-right {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .f-r-links a {
+        margin-top: 15px;
+    }
+    /* --------------- footer end -------------- */
+}
+
+/* -----------mobile version end---------------- */
